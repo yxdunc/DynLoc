@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DynLoc
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        DynLocalization.changeLocalization(language: nil)
+    }
+    
+    @IBAction func englishButton(_ sender: UIButton) {
+        DynLocalization.changeLocalization(language: "en")
+        print ("En")
+    }
+    
+    @IBAction func frenchButton(_ sender: UIButton) {
+        DynLocalization.changeLocalization(language: "fr")
+        print ("Fr")
+    }
+    
 }
 

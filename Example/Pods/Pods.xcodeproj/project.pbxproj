@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BD858C2D3CE6DAD18E866C208E3BC7 /* UILocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3176723B40A90C1D4FFC7591B9DC8 /* UILocalizedButton.swift */; };
+		16A90BA5DB60E9DA8EB032448EFAF945 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */; };
+		36A9554D1AB22F701A92EAD3713E881D /* Pods-DynLoc_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7A947F4C0B62C532236A5999D35BE3 /* Pods-DynLoc_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A19422A5C629803184B40FA983C180A /* String+LocalizeTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4265B6A8C339FCB93E4D96004D8D1A /* String+LocalizeTableName.swift */; };
+		48EDE2947BD0942E2CF440C773CBDF0C /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA1106DC94DF3ACC5595F3F2D98EE48 /* Localize_Swift.framework */; };
+		4C9FC9505928B10F36EC4F6E1F26E54B /* Pods-DynLoc_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F5B0F57D7F6DCB14CE59BE97F8D23B /* Pods-DynLoc_Example-dummy.m */; };
+		4E7E77F4E50427EBBB6996E7F5E84104 /* String+LocalizedBundleTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929005C0DC10C08A2F4A57BF713A39C /* String+LocalizedBundleTableName.swift */; };
+		532DAA6F7FB8F0C03D13E4FC0D73EA4A /* Localize-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76183D05D7517BB8F427558CC5793 /* Localize-Swift-dummy.m */; };
+		88C89D3C9CAB4961B1FB597BE792BBE4 /* DynLoc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F09AC99DDD414FDAD6225A160302F3 /* DynLoc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D1CAE05F851AF841D896C1608E5371D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351D2E9146229B387323C9821ECB2B33 /* UIKit.framework */; };
+		938B964761AB8A0B8BD6B7A59F0636E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */; };
+		9F54FB8797ADFEEBDD1165EE9CDC9430 /* Pods-DynLoc_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA3B037FC7A723FA400C6FB21CD341 /* Pods-DynLoc_Tests-dummy.m */; };
+		A3CD03527DF1D5603C3D4D7DC6B4788B /* String+LocalizeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFC5D0221FECAD4F32D9E43612EFE3 /* String+LocalizeBundle.swift */; };
+		A6F4918DF01CA496099363A5284FA8E5 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4293EDE725404990E6D8CD1B3D42501 /* Localize.swift */; };
+		A817C08EC4EEB33B481D606A376F89D2 /* DynLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BA00C89CFE24B3FA73279DB1B4DFC5 /* DynLocalization.swift */; };
+		BB7AFCB353F49A370DE04EEB8885E57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */; };
+		C2C939CBEFDD7320E949400FD76B33AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */; };
+		C996113C5B49EDB12EFAC8493F7AEBAE /* Pods-DynLoc_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05BF43B3C1330AF22E567A19F45B53B0 /* Pods-DynLoc_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA71F98971B66AD4C896278370B7F605 /* UILocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BBE777E9FE42F3432DCCCAF31BFB11 /* UILocalizedLabel.swift */; };
+		E59B66D90C2801C08D97A7F40E77F9D0 /* DynLoc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D80AD5B86A2E37533479CC3C4447760A /* DynLoc-dummy.m */; };
+		E90803F95E3CB7ABF9DBEC1ABBB4A7E7 /* Localize_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 867C3FBD17DD03A17B97138FC1CC51D9 /* Localize_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6ECC3C5DFB546ABF7256B073A25D9B /* Localize-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7D3B376D23F1FA7F5AB264D7086109 /* Localize-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4764179AD947EFEF23E0BBA03BACFE94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0216D77343DC9C23B183DB8965AC7397;
+			remoteInfo = "Localize-Swift";
+		};
+		4EFA27BF512F847097AD935518186190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D783835BB50D366E5067F32EAB2072;
+			remoteInfo = "Pods-DynLoc_Example";
+		};
+		5116A7B40DAAA069889CC1FB5332859A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CEB2EE10086943E7400C3B893E4062;
+			remoteInfo = DynLoc;
+		};
+		96731F4F37803C967624480F5FAD04F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0216D77343DC9C23B183DB8965AC7397;
+			remoteInfo = "Localize-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F5B0F57D7F6DCB14CE59BE97F8D23B /* Pods-DynLoc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynLoc_Example-dummy.m"; sourceTree = "<group>"; };
+		04B23748B646D84FE5367E6CB4EDAF6F /* Pods-DynLoc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynLoc_Tests-Info.plist"; sourceTree = "<group>"; };
+		05BF43B3C1330AF22E567A19F45B53B0 /* Pods-DynLoc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynLoc_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0929005C0DC10C08A2F4A57BF713A39C /* String+LocalizedBundleTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizedBundleTableName.swift"; path = "Sources/String+LocalizedBundleTableName.swift"; sourceTree = "<group>"; };
+		0A1B78D223EDB2B9C7707384F9D4563F /* Pods-DynLoc_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynLoc_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0EFAF40CE3928B8C92FB6DA28847D358 /* Pods-DynLoc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynLoc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A3163F5B0F608393477CB9B9EAE05B6 /* Pods-DynLoc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynLoc_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1CE76183D05D7517BB8F427558CC5793 /* Localize-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Localize-Swift-dummy.m"; sourceTree = "<group>"; };
+		1EE4D1E77ADA8048B12370F83AEAFCF3 /* Pods-DynLoc_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynLoc_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FCD00D5382A807898B1A0ED5C27F128 /* DynLoc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DynLoc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25C99C8317B430809BF8E5AB4202D610 /* DynLoc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynLoc-Info.plist"; sourceTree = "<group>"; };
+		2C2CE529E0D096C030155519293BD367 /* Localize-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Localize-Swift.xcconfig"; sourceTree = "<group>"; };
+		2C4265B6A8C339FCB93E4D96004D8D1A /* String+LocalizeTableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeTableName.swift"; path = "Sources/String+LocalizeTableName.swift"; sourceTree = "<group>"; };
+		2C85C677F4FBF6D0ED7CB573BED65C47 /* Localize_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Localize_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E406BA043FD99DFBDB60BACC0FD5C5A /* Pods-DynLoc_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DynLoc_Example.modulemap"; sourceTree = "<group>"; };
+		2F916FB8121133042B9EA0051A793D6E /* DynLoc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynLoc.modulemap; sourceTree = "<group>"; };
+		327887EB59947F2F42A846513900F626 /* DynLoc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynLoc-prefix.pch"; sourceTree = "<group>"; };
+		351D2E9146229B387323C9821ECB2B33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		35DA3B037FC7A723FA400C6FB21CD341 /* Pods-DynLoc_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynLoc_Tests-dummy.m"; sourceTree = "<group>"; };
+		38DBF95C9022CFF3451EBB8FF9F97278 /* Localize-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Localize-Swift.modulemap"; sourceTree = "<group>"; };
+		3919F523AC6D715ECE69541F5C130E82 /* Pods-DynLoc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynLoc_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		466BED0DE37FB2EE5F991AA05B651287 /* Pods-DynLoc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynLoc_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4EA1106DC94DF3ACC5595F3F2D98EE48 /* Localize_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Localize_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549235561C1BD210A880BBEBB4AEFB47 /* DynLoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynLoc.xcconfig; sourceTree = "<group>"; };
+		5A7A947F4C0B62C532236A5999D35BE3 /* Pods-DynLoc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynLoc_Example-umbrella.h"; sourceTree = "<group>"; };
+		67F09AC99DDD414FDAD6225A160302F3 /* DynLoc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynLoc-umbrella.h"; sourceTree = "<group>"; };
+		76884DB81451C1AAA3EFF218A5C3CD86 /* Localize-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Localize-Swift-Info.plist"; sourceTree = "<group>"; };
+		78BA00C89CFE24B3FA73279DB1B4DFC5 /* DynLocalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynLocalization.swift; path = DynLoc/Classes/DynLocalization.swift; sourceTree = "<group>"; };
+		7C7D3B376D23F1FA7F5AB264D7086109 /* Localize-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Localize-Swift-umbrella.h"; sourceTree = "<group>"; };
+		80715ADE77C43F0D1B90362AE15D9263 /* Pods-DynLoc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynLoc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		867C3FBD17DD03A17B97138FC1CC51D9 /* Localize_Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Localize_Swift.h; path = Sources/Localize_Swift.h; sourceTree = "<group>"; };
+		8A9457252CA6F9BDB1113F6985C91013 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8B15C064E09AA49C4E590470CF77D67A /* Pods-DynLoc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DynLoc_Tests.modulemap"; sourceTree = "<group>"; };
+		8C8A2C07E46EB5F77BF6CE1BE043E95C /* DynLoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynLoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3176723B40A90C1D4FFC7591B9DC8 /* UILocalizedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILocalizedButton.swift; path = DynLoc/Classes/UILocalizedButton.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4729B4DFD99F9821755B22D113D95B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6E1EC829DB2061C6A211F6BB335D62A /* Pods_DynLoc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynLoc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8BBE777E9FE42F3432DCCCAF31BFB11 /* UILocalizedLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILocalizedLabel.swift; path = DynLoc/Classes/UILocalizedLabel.swift; sourceTree = "<group>"; };
+		B05D9012912654A17B159951C86F9742 /* Localize-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Localize-Swift-prefix.pch"; sourceTree = "<group>"; };
+		B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C011824F0FC074624E17A8DD2A647C8D /* Pods-DynLoc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynLoc_Example-Info.plist"; sourceTree = "<group>"; };
+		C4CFC5D0221FECAD4F32D9E43612EFE3 /* String+LocalizeBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LocalizeBundle.swift"; path = "Sources/String+LocalizeBundle.swift"; sourceTree = "<group>"; };
+		D36C7571451AF457138BA283A71E3E4B /* Pods-DynLoc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynLoc_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D80AD5B86A2E37533479CC3C4447760A /* DynLoc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynLoc-dummy.m"; sourceTree = "<group>"; };
+		E4293EDE725404990E6D8CD1B3D42501 /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = Sources/Localize.swift; sourceTree = "<group>"; };
+		EE0DF3903DF60EF8D8179E21B5FF81AB /* Pods_DynLoc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynLoc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB05723A6491B6861652DCA4F47D174 /* Pods-DynLoc_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynLoc_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160B168D3312CD3B130E48B6635BBFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938B964761AB8A0B8BD6B7A59F0636E0 /* Foundation.framework in Frameworks */,
+				48EDE2947BD0942E2CF440C773CBDF0C /* Localize_Swift.framework in Frameworks */,
+				8D1CAE05F851AF841D896C1608E5371D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3D934756333FADCBD9746765FF0CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C939CBEFDD7320E949400FD76B33AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67AA097852D6F4BB7F65237E826AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7AFCB353F49A370DE04EEB8885E57C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEEC0D7BE533FEBD44C415A8E004117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A90BA5DB60E9DA8EB032448EFAF945 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E315EE8A36D872A3E0FAFFA98BAEC65 /* Pods-DynLoc_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2E406BA043FD99DFBDB60BACC0FD5C5A /* Pods-DynLoc_Example.modulemap */,
+				FBB05723A6491B6861652DCA4F47D174 /* Pods-DynLoc_Example-acknowledgements.markdown */,
+				1EE4D1E77ADA8048B12370F83AEAFCF3 /* Pods-DynLoc_Example-acknowledgements.plist */,
+				00F5B0F57D7F6DCB14CE59BE97F8D23B /* Pods-DynLoc_Example-dummy.m */,
+				1A3163F5B0F608393477CB9B9EAE05B6 /* Pods-DynLoc_Example-frameworks.sh */,
+				C011824F0FC074624E17A8DD2A647C8D /* Pods-DynLoc_Example-Info.plist */,
+				5A7A947F4C0B62C532236A5999D35BE3 /* Pods-DynLoc_Example-umbrella.h */,
+				3919F523AC6D715ECE69541F5C130E82 /* Pods-DynLoc_Example.debug.xcconfig */,
+				466BED0DE37FB2EE5F991AA05B651287 /* Pods-DynLoc_Example.release.xcconfig */,
+			);
+			name = "Pods-DynLoc_Example";
+			path = "Target Support Files/Pods-DynLoc_Example";
+			sourceTree = "<group>";
+		};
+		30BE4FB6329C7342C3E8CA2B76ABBEC5 /* DynLoc */ = {
+			isa = PBXGroup;
+			children = (
+				78BA00C89CFE24B3FA73279DB1B4DFC5 /* DynLocalization.swift */,
+				8CC3176723B40A90C1D4FFC7591B9DC8 /* UILocalizedButton.swift */,
+				A8BBE777E9FE42F3432DCCCAF31BFB11 /* UILocalizedLabel.swift */,
+				872728DAF78095DF9B9AC41321C02171 /* Pod */,
+				60D5285DD2C6A869995E6F65D33258B0 /* Support Files */,
+			);
+			name = DynLoc;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3D848644D2D6B9128ABE0D71622C58C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E315EE8A36D872A3E0FAFFA98BAEC65 /* Pods-DynLoc_Example */,
+				7434DC05B9C6B5AA01611EA30BBC62C9 /* Pods-DynLoc_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60D5285DD2C6A869995E6F65D33258B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F916FB8121133042B9EA0051A793D6E /* DynLoc.modulemap */,
+				549235561C1BD210A880BBEBB4AEFB47 /* DynLoc.xcconfig */,
+				D80AD5B86A2E37533479CC3C4447760A /* DynLoc-dummy.m */,
+				25C99C8317B430809BF8E5AB4202D610 /* DynLoc-Info.plist */,
+				327887EB59947F2F42A846513900F626 /* DynLoc-prefix.pch */,
+				67F09AC99DDD414FDAD6225A160302F3 /* DynLoc-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DynLoc";
+			sourceTree = "<group>";
+		};
+		6DAA99BD7037BC0A0CB5043804C148F2 /* Localize-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E4293EDE725404990E6D8CD1B3D42501 /* Localize.swift */,
+				867C3FBD17DD03A17B97138FC1CC51D9 /* Localize_Swift.h */,
+				C4CFC5D0221FECAD4F32D9E43612EFE3 /* String+LocalizeBundle.swift */,
+				0929005C0DC10C08A2F4A57BF713A39C /* String+LocalizedBundleTableName.swift */,
+				2C4265B6A8C339FCB93E4D96004D8D1A /* String+LocalizeTableName.swift */,
+				728B439844BA3CDB2E88B471BB86CDBB /* Support Files */,
+			);
+			path = "Localize-Swift";
+			sourceTree = "<group>";
+		};
+		728B439844BA3CDB2E88B471BB86CDBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38DBF95C9022CFF3451EBB8FF9F97278 /* Localize-Swift.modulemap */,
+				2C2CE529E0D096C030155519293BD367 /* Localize-Swift.xcconfig */,
+				1CE76183D05D7517BB8F427558CC5793 /* Localize-Swift-dummy.m */,
+				76884DB81451C1AAA3EFF218A5C3CD86 /* Localize-Swift-Info.plist */,
+				B05D9012912654A17B159951C86F9742 /* Localize-Swift-prefix.pch */,
+				7C7D3B376D23F1FA7F5AB264D7086109 /* Localize-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Localize-Swift";
+			sourceTree = "<group>";
+		};
+		7434DC05B9C6B5AA01611EA30BBC62C9 /* Pods-DynLoc_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B15C064E09AA49C4E590470CF77D67A /* Pods-DynLoc_Tests.modulemap */,
+				0A1B78D223EDB2B9C7707384F9D4563F /* Pods-DynLoc_Tests-acknowledgements.markdown */,
+				80715ADE77C43F0D1B90362AE15D9263 /* Pods-DynLoc_Tests-acknowledgements.plist */,
+				35DA3B037FC7A723FA400C6FB21CD341 /* Pods-DynLoc_Tests-dummy.m */,
+				04B23748B646D84FE5367E6CB4EDAF6F /* Pods-DynLoc_Tests-Info.plist */,
+				05BF43B3C1330AF22E567A19F45B53B0 /* Pods-DynLoc_Tests-umbrella.h */,
+				0EFAF40CE3928B8C92FB6DA28847D358 /* Pods-DynLoc_Tests.debug.xcconfig */,
+				D36C7571451AF457138BA283A71E3E4B /* Pods-DynLoc_Tests.release.xcconfig */,
+			);
+			name = "Pods-DynLoc_Tests";
+			path = "Target Support Files/Pods-DynLoc_Tests";
+			sourceTree = "<group>";
+		};
+		7A5A765E31F09339BAC275934198BB3B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B155ACE68F96AE6D8CA4A3064D5916F7 /* Foundation.framework */,
+				351D2E9146229B387323C9821ECB2B33 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		872728DAF78095DF9B9AC41321C02171 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1FCD00D5382A807898B1A0ED5C27F128 /* DynLoc.podspec */,
+				A4729B4DFD99F9821755B22D113D95B8 /* LICENSE */,
+				8A9457252CA6F9BDB1113F6985C91013 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A69381AFD5F81E4C38DD3F3F42C1C662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DAA99BD7037BC0A0CB5043804C148F2 /* Localize-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B56D89AC3968D5D9E256B67C3BA61A62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EA1106DC94DF3ACC5595F3F2D98EE48 /* Localize_Swift.framework */,
+				7A5A765E31F09339BAC275934198BB3B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF5C3140923A5C873ED947D93410D086 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30BE4FB6329C7342C3E8CA2B76ABBEC5 /* DynLoc */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BF5C3140923A5C873ED947D93410D086 /* Development Pods */,
+				B56D89AC3968D5D9E256B67C3BA61A62 /* Frameworks */,
+				A69381AFD5F81E4C38DD3F3F42C1C662 /* Pods */,
+				D546477D2312B8FD0882DDCDAAF2D02C /* Products */,
+				3D848644D2D6B9128ABE0D71622C58C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D546477D2312B8FD0882DDCDAAF2D02C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C8A2C07E46EB5F77BF6CE1BE043E95C /* DynLoc.framework */,
+				2C85C677F4FBF6D0ED7CB573BED65C47 /* Localize_Swift.framework */,
+				EE0DF3903DF60EF8D8179E21B5FF81AB /* Pods_DynLoc_Example.framework */,
+				A6E1EC829DB2061C6A211F6BB335D62A /* Pods_DynLoc_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A410925F4D1A65BF0C026593AB3C54B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6ECC3C5DFB546ABF7256B073A25D9B /* Localize-Swift-umbrella.h in Headers */,
+				E90803F95E3CB7ABF9DBEC1ABBB4A7E7 /* Localize_Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EC27408ECB03051938AF8049FD0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A9554D1AB22F701A92EAD3713E881D /* Pods-DynLoc_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D5F8C0726F56CED4F4ECED83CC0DEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C996113C5B49EDB12EFAC8493F7AEBAE /* Pods-DynLoc_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CF77710BF647A0CDA41E27263296EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C89D3C9CAB4961B1FB597BE792BBE4 /* DynLoc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0216D77343DC9C23B183DB8965AC7397 /* Localize-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B257E852D9DBD265D0061038C6824AE /* Build configuration list for PBXNativeTarget "Localize-Swift" */;
+			buildPhases = (
+				3A410925F4D1A65BF0C026593AB3C54B /* Headers */,
+				6161D78B6B7E73A4AE52B0D6812E892D /* Sources */,
+				4D3D934756333FADCBD9746765FF0CBB /* Frameworks */,
+				00E2FFFE06A87D047168F659D5782B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Localize-Swift";
+			productName = "Localize-Swift";
+			productReference = 2C85C677F4FBF6D0ED7CB573BED65C47 /* Localize_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19D783835BB50D366E5067F32EAB2072 /* Pods-DynLoc_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243A4808BBBEB1545C22B5645911C5DA /* Build configuration list for PBXNativeTarget "Pods-DynLoc_Example" */;
+			buildPhases = (
+				56A1EC27408ECB03051938AF8049FD0F /* Headers */,
+				7710CFF9D89AE1E1EB190452CD182147 /* Sources */,
+				6E67AA097852D6F4BB7F65237E826AC0 /* Frameworks */,
+				A22F881DEE8BAEF9BFD8D5299957B54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD70372D928F2708E112D31435B3D7C /* PBXTargetDependency */,
+				E7116D590240F88B1CD11F4E1D4343A1 /* PBXTargetDependency */,
+			);
+			name = "Pods-DynLoc_Example";
+			productName = "Pods-DynLoc_Example";
+			productReference = EE0DF3903DF60EF8D8179E21B5FF81AB /* Pods_DynLoc_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B58F808867873A97FE9BC5C63FFB128 /* Pods-DynLoc_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE0910EAB724D63B8305A2A70E2FE8B /* Build configuration list for PBXNativeTarget "Pods-DynLoc_Tests" */;
+			buildPhases = (
+				85D5F8C0726F56CED4F4ECED83CC0DEA /* Headers */,
+				F4CC79DFEBCCC0F58AF4E0AE333026B0 /* Sources */,
+				AAEEC0D7BE533FEBD44C415A8E004117 /* Frameworks */,
+				0BEAEDB6B3DAD9A38614DEF79DBF72D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035813D832E5777C1E73276220C8364 /* PBXTargetDependency */,
+			);
+			name = "Pods-DynLoc_Tests";
+			productName = "Pods-DynLoc_Tests";
+			productReference = A6E1EC829DB2061C6A211F6BB335D62A /* Pods_DynLoc_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4CEB2EE10086943E7400C3B893E4062 /* DynLoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C467AC584C5BEAA866B08122EB3C9E7 /* Build configuration list for PBXNativeTarget "DynLoc" */;
+			buildPhases = (
+				B0CF77710BF647A0CDA41E27263296EA /* Headers */,
+				2F778F9A9F0AED6441E8BC8E8F4F469A /* Sources */,
+				160B168D3312CD3B130E48B6635BBFD3 /* Frameworks */,
+				DFC7A758A9FA5CA7EF6F0AC15122B38F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58A29637C8F253489437367E5A623AAC /* PBXTargetDependency */,
+			);
+			name = DynLoc;
+			productName = DynLoc;
+			productReference = 8C8A2C07E46EB5F77BF6CE1BE043E95C /* DynLoc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D546477D2312B8FD0882DDCDAAF2D02C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4CEB2EE10086943E7400C3B893E4062 /* DynLoc */,
+				0216D77343DC9C23B183DB8965AC7397 /* Localize-Swift */,
+				19D783835BB50D366E5067F32EAB2072 /* Pods-DynLoc_Example */,
+				7B58F808867873A97FE9BC5C63FFB128 /* Pods-DynLoc_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E2FFFE06A87D047168F659D5782B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BEAEDB6B3DAD9A38614DEF79DBF72D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22F881DEE8BAEF9BFD8D5299957B54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC7A758A9FA5CA7EF6F0AC15122B38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F778F9A9F0AED6441E8BC8E8F4F469A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59B66D90C2801C08D97A7F40E77F9D0 /* DynLoc-dummy.m in Sources */,
+				A817C08EC4EEB33B481D606A376F89D2 /* DynLocalization.swift in Sources */,
+				03BD858C2D3CE6DAD18E866C208E3BC7 /* UILocalizedButton.swift in Sources */,
+				DA71F98971B66AD4C896278370B7F605 /* UILocalizedLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6161D78B6B7E73A4AE52B0D6812E892D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532DAA6F7FB8F0C03D13E4FC0D73EA4A /* Localize-Swift-dummy.m in Sources */,
+				A6F4918DF01CA496099363A5284FA8E5 /* Localize.swift in Sources */,
+				A3CD03527DF1D5603C3D4D7DC6B4788B /* String+LocalizeBundle.swift in Sources */,
+				4E7E77F4E50427EBBB6996E7F5E84104 /* String+LocalizedBundleTableName.swift in Sources */,
+				3A19422A5C629803184B40FA983C180A /* String+LocalizeTableName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7710CFF9D89AE1E1EB190452CD182147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9FC9505928B10F36EC4F6E1F26E54B /* Pods-DynLoc_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC79DFEBCCC0F58AF4E0AE333026B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F54FB8797ADFEEBDD1165EE9CDC9430 /* Pods-DynLoc_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58A29637C8F253489437367E5A623AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = 0216D77343DC9C23B183DB8965AC7397 /* Localize-Swift */;
+			targetProxy = 4764179AD947EFEF23E0BBA03BACFE94 /* PBXContainerItemProxy */;
+		};
+		6FD70372D928F2708E112D31435B3D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynLoc;
+			target = A4CEB2EE10086943E7400C3B893E4062 /* DynLoc */;
+			targetProxy = 5116A7B40DAAA069889CC1FB5332859A /* PBXContainerItemProxy */;
+		};
+		7035813D832E5777C1E73276220C8364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DynLoc_Example";
+			target = 19D783835BB50D366E5067F32EAB2072 /* Pods-DynLoc_Example */;
+			targetProxy = 4EFA27BF512F847097AD935518186190 /* PBXContainerItemProxy */;
+		};
+		E7116D590240F88B1CD11F4E1D4343A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Localize-Swift";
+			target = 0216D77343DC9C23B183DB8965AC7397 /* Localize-Swift */;
+			targetProxy = 96731F4F37803C967624480F5FAD04F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01B12924EE07A2146994718F3DB87B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2CE529E0D096C030155519293BD367 /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Localize-Swift/Localize-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Localize-Swift/Localize-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Localize_Swift;
+				PRODUCT_NAME = Localize_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35E0DBCFCFB4A764EC9C8EB3C4E0F9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3919F523AC6D715ECE69541F5C130E82 /* Pods-DynLoc_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DynLoc_Example/Pods-DynLoc_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynLoc_Example/Pods-DynLoc_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44AAA7C8D49644D0EACF58DD074F7C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2CE529E0D096C030155519293BD367 /* Localize-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Localize-Swift/Localize-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Localize-Swift/Localize-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Localize-Swift/Localize-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Localize_Swift;
+				PRODUCT_NAME = Localize_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85C59CDF14F3ACD9D00CF979CA20D974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFAF40CE3928B8C92FB6DA28847D358 /* Pods-DynLoc_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DynLoc_Tests/Pods-DynLoc_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynLoc_Tests/Pods-DynLoc_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E54E5BE39F8672FE62FC53B6A4564AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466BED0DE37FB2EE5F991AA05B651287 /* Pods-DynLoc_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DynLoc_Example/Pods-DynLoc_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynLoc_Example/Pods-DynLoc_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92D9C99827F637A854DE345D73A49E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549235561C1BD210A880BBEBB4AEFB47 /* DynLoc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynLoc/DynLoc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynLoc/DynLoc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynLoc/DynLoc.modulemap";
+				PRODUCT_MODULE_NAME = DynLoc;
+				PRODUCT_NAME = DynLoc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B47C0F1E95F0E1B63D3F27CE05BBEF66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549235561C1BD210A880BBEBB4AEFB47 /* DynLoc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynLoc/DynLoc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynLoc/DynLoc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynLoc/DynLoc.modulemap";
+				PRODUCT_MODULE_NAME = DynLoc;
+				PRODUCT_NAME = DynLoc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC55B2A3FB512348E369D22C778033DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D36C7571451AF457138BA283A71E3E4B /* Pods-DynLoc_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DynLoc_Tests/Pods-DynLoc_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynLoc_Tests/Pods-DynLoc_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243A4808BBBEB1545C22B5645911C5DA /* Build configuration list for PBXNativeTarget "Pods-DynLoc_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E0DBCFCFB4A764EC9C8EB3C4E0F9C2 /* Debug */,
+				8E54E5BE39F8672FE62FC53B6A4564AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE0910EAB724D63B8305A2A70E2FE8B /* Build configuration list for PBXNativeTarget "Pods-DynLoc_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C59CDF14F3ACD9D00CF979CA20D974 /* Debug */,
+				EC55B2A3FB512348E369D22C778033DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C467AC584C5BEAA866B08122EB3C9E7 /* Build configuration list for PBXNativeTarget "DynLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D9C99827F637A854DE345D73A49E88 /* Debug */,
+				B47C0F1E95F0E1B63D3F27CE05BBEF66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B257E852D9DBD265D0061038C6824AE /* Build configuration list for PBXNativeTarget "Localize-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B12924EE07A2146994718F3DB87B14 /* Debug */,
+				44AAA7C8D49644D0EACF58DD074F7C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

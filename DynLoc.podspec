@@ -8,35 +8,25 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DynLoc'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DynLoc.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.0.1'
+  s.swift_version    = '4.2'
+  s.summary          = 'Dynamic localization for storyboard.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       This framework lets you write localized UIKit elements based on an identifier
+                       string that you can define in the Interface Builder.
                        DESC
 
-  s.homepage         = 'https://github.com/Robin Guignard-Perret/DynLoc'
+  s.homepage         = 'https://github.com/yxdunc/DynLoc'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Robin Guignard-Perret' => 'yxdunc@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/Robin Guignard-Perret/DynLoc.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/yxdunc/DynLoc.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/rguignar'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DynLoc/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DynLoc' => ['DynLoc/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit'
+   s.dependency 'Localize-Swift', '~> 2.0'
 end

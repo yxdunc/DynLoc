@@ -1,0 +1,23 @@
+PODS:
+  - DynLoc (0.0.1):
+    - Localize-Swift (~> 2.0)
+  - Localize-Swift (2.0.0)
+
+DEPENDENCIES:
+  - DynLoc (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Localize-Swift
+
+EXTERNAL SOURCES:
+  DynLoc:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynLoc: f79d1ecb16e2b4f40d98513a245fd63e968637e6
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+
+PODFILE CHECKSUM: 530ede15ce987ab70dbf27bcdcc95d057c2dcecb
+
+COCOAPODS: 1.6.1

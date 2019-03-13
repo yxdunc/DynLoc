@@ -1,0 +1,6 @@
+framework module Pods_DynLoc_Example {
+  umbrella header "Pods-DynLoc_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
