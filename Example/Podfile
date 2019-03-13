@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DynLoc_Example' do
+  pod 'DynLoc', :path => '../'
+
+  target 'DynLoc_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
